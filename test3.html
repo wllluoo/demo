@@ -41,7 +41,6 @@
 		  position: relative;
 		  overflow: hidden;
 		}
-
 		.wave
 		{
 		  opacity: 1;
@@ -55,6 +54,13 @@
 		  border-radius: 40%;
 		  
 		}
+		.rabit{
+			display: none;
+			background: url(img/rabit.png);
+			width: 30%;
+		}
+		
+
 		#waveone {
 		          animation: drift 3550ms infinite linear;
 		  opacity: .3;
@@ -140,9 +146,41 @@
 		    float: left;
 		    margin-top: -14px;
 		}
+		/*大屏*/
+		@media screen and (min-width:1280px)
+		{
+			body{
+				display: flex;
+				flex-direction: column;
+			}
+			.box{
+				width: 100%!important;
+			}
+			.wave{
+			    left: 10%;
+			    width: 850px;
+			    height: 130%;
+			    margin-left: -330px;
+			    top: 750px;
+			}
+			.rabit{
+				display: block;
+				background: url(img/rabit.png);
+			    height: 8%;
+			    width: 15%;
+			    background-repeat: round;
+			    margin: 0;
+			    float: left;
+			}
+			.img{
+				 top: 520px;
+			}
+		}
+
 	</style>
 </head>
 <body>
+	<p class="rabit"></p>
 	<div class='box'>
 	  <div class='title' id="title">Timer</div>
 	  <div class="wave" id='waveone' style="margin-top:-10%;" ></div>
