@@ -146,8 +146,38 @@
 		    float: left;
 		    margin-top: -14px;
 		}
+		/*小屏*/
+		@media screen and (max-width:1366px )
+		{
+			body{
+				display: flex;
+				flex-direction: column;
+			}
+			.box{
+				width: 100%!important;
+			}
+			.wave{
+			    left: 10%;
+			    width: 850px;
+			    height: 130%;
+			    margin-left: -330px;
+			    top: 650px;
+			}
+			.rabit{
+				display: block;
+				background: url(img/rabit.png);
+			    height: 8%;
+			    width: 15%;
+			    background-repeat: round;
+			    margin: 0;
+			    float: left;
+			}
+			.img{
+				 /*top: 520px;*/
+			}
+		}
 		/*大屏*/
-		@media screen and (min-width:1280px)
+		@media screen and (min-width:1366px)
 		{
 			body{
 				display: flex;
@@ -222,7 +252,6 @@
 		$("#waveone").css("margin-top","-"+(str[2]/60)*100+"%");
 		$("#wavetwo").css("margin-top","-"+(str[1]/60)*100+"%");
 		$("#wavethree").css("margin-top","-"+(str[1]/24)*100+"%");
-		
 	}	
 	</script>
 	
